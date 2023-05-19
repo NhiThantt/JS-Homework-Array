@@ -115,9 +115,9 @@ function findFirstPrime() {
         if (checkPrime(numbers[i])) {
             firstPrime = numbers[i];
             break
-        }
+        } 
     }
-    getEle("txtPrime").innerHTML = firstPrime;
+    firstPrime === 0? getEle("txtPrime").innerHTML = "Không có số nguyên tố trong mảng" : getEle("txtPrime").innerHTML = firstPrime;
 }
 
 //9. Đếm số nguyên
